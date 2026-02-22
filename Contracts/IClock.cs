@@ -1,8 +1,6 @@
 namespace ITCS_3112_Lab_1_Checkout.Contracts;
 
-public interface IPolicy
+public interface IClock
 {
-    bool CanCheckOut(Item item);
-    int GetMaxLoanDays(Item item);
-    bool IsDueDateValid(Item item, DateTime requestedDueDate);
+    DateTime Now();
 }
