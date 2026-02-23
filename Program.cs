@@ -1,9 +1,13 @@
-﻿namespace ITCS_3112_Lab_1_Checkout;
+﻿using ITCS_3112_Lab_1_Checkout.Contracts;
+using ITCS_3112_Lab_1_Checkout.Repositories;
+
+namespace ITCS_3112_Lab_1_Checkout;
 
 class Program
 {
     static void Main(string[] args)
     {
+        IRepository repository = new InMemoryRepository();
         bool exit = false;
         while (!exit)
         {
@@ -22,7 +26,36 @@ class Program
             int input = Convert.ToInt32(Console.ReadLine());
             switch (input)
             {
-                case 0: exit = true; break;
+                case 0:
+                    exit = true;
+                    break;
+                case 1: 
+                    repository.AddItem();
+                    break;
+                case 2:
+                    
+                    break;
+                case 3:
+                    
+                    break;
+                case 4:
+                    
+                    break;
+                case 5:
+                    
+                    break;
+                case 6:
+                    
+                    break;
+                case 7:
+                    
+                    break;
+                case 8:
+                    
+                    break;
+                case 9:
+                    
+                    break;
             }
         }
     }
